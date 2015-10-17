@@ -1,1 +1,17 @@
 
+% Script file: sin _ x _ over _ x
+FX = 'sin(X)/X';
+subplot(2,2,1);
+fplot(FX, [-20*pi,5*pi]);xlabel('x axis'); ylabel('y-axis');
+title('[sin(x)/x] vs x, using fplot')
+subplot(2,2,2)
+ezplot(FX, [-20*pi,5*pi])
+title('[sin(x)/x] vs x, using ezplot')
+subplot(2,2,3)
+X = linspace(-5*pi,5*pi,100);
+Y = sin(X)./X;
+plot(X,Y);xlabel('x axis'); ylabel('y-axis');
+title('[sin(x)/x] vs x, using plot')
+subplot(2,2,4)
+ezpolar(FX, [-5*pi, 5*pi])
+title('[sin(x)/x] vs x, using ezpolar') 
