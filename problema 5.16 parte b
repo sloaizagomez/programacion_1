@@ -1,0 +1,17 @@
+r = 2;
+xc = 1;
+yc = 1;
+theta = linspace(0,2*pi,50);
+x = r*cos(theta) + xc;
+y = r*sin(theta) + yc;
+plot(x,y,'o--')
+axis([-5 5 -10 10]) 
+hold on 
+r = 3;
+xc = -2;
+yc = 1;
+theta = linspace(0,2*pi,50);
+x = r*cos(theta) + xc;
+y = r*sin(theta) + yc;
+plot(x,y,'m')
+legend('radio=2 centro(1,1)','radio= centro(-2,1)')
