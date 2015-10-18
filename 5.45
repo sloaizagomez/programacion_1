@@ -1,0 +1,14 @@
+
+% Script file: ez _ xsinx
+figure(1)
+ezplot('sin(1/x)')
+hold on
+ezplot('x*sin(x)')
+disp('*********************************************')
+disp('The solutions outside -0.15? x ?0.15 are :')
+disp('*********************************************')
+figure(2)
+ezplot('sin(1/x)') 
+hold on
+ezplot('x*sin(x)')
+axis([-0.5 0.5 -2 2])
