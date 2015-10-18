@@ -1,0 +1,14 @@
+figure(1)
+x=linspace(0,2*pi,20)
+Y1=(sin(x)).^2
+plot(x,Y1,'vg')
+hold on 
+y2=(cos(x)).^2
+plot(x,y2,'vm')
+hold on 
+Y3=Y1+y2
+plot(x,Y3,'vb')
+hold on 
+gtext('sin^2(x)')
+gtext('cos^2(x)')
+gtext('sin^2(x)+cos^2(x)')
