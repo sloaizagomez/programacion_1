@@ -1,0 +1,8 @@
+r = 2;
+xc = 1;
+yc = 1;
+theta = linspace(0,2*pi,50);
+x = r*cos(theta) + xc;
+y = r*sin(theta) + yc;
+plot(x,y,'o--')
+legend('radio=2 centro(1,1)')
