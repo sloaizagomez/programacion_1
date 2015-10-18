@@ -1,0 +1,6 @@
+t=-10:1:10;
+x=t;
+plot(x,t)
+hold on
+y=5*sin(t);
+plot(x,y,'m')
