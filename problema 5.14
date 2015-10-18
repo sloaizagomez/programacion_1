@@ -1,0 +1,14 @@
+x=2:1:99;
+Y=x.^2;
+figure(1)
+plot(x,Y,'m')
+title('linear')
+figure(2)
+plot(x,log(Y),'y')
+title('linear-log')
+figure(3)
+plot(log(x),Y,'b')
+title('log-linear')
+figure(4)
+plot(log(x),log(Y),'c')
+title('LOG-log')
